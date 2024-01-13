@@ -1,0 +1,21 @@
+<div class="card" style="margin: 10px;">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a  [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}" aria-current="page" class="nav-link active "[routerLink]="['/tache']" >Les tâches</a>
+    </li>
+    <li class="nav-item">
+      <a [routerLinkActive]="'active'" class="nav-link" [routerLink]="['/tache/ajouter']"> Ajouter une tâche</a>
+    </li>
+    <li class="nav-item">
+      <a [routerLinkActive]="'active'" class="nav-link" [routerLink]="['/tache/modifier']">Modifier une tâche</a>
+    </li>
+    <li class="nav-item">
+        <a [routerLinkActive]="'active'" class="nav-link" [routerLink]="['/tache/supprimer']">Supprimer une tâche </a>
+      </li>
+     
+  </ul>
+  <div class="container">
+  <router-outlet></router-outlet>
+  </div>
+  
+</div>

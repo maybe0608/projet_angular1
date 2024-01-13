@@ -1,0 +1,22 @@
+<form > 
+    <div class="card p-5 m-5" >
+
+        <div class="mb-3">
+            <label for="titre" class="form-label">Titre </label>
+            <input [(ngModel)]="tache.titre" type="text" class="form-control" id="titre" name="titre">
+        </div>
+
+        <div class="mb-3">
+            <label for="contenu" class="form-label">Contenu </label>
+            <input [(ngModel)]="tache.contenu" type="text" class="form-control" id="contenu" name="contenu">
+        </div>
+
+        <div class="mb-3 form-check">
+            <input [(ngModel)]="tache.realise" type="checkbox" class="form-check-input" id="realise" name="realise">
+            <label class="form-check-label" for="exampleCheck1">Réalisé</label>
+        </div>
+
+            <button (click)="ajouter()" type="submit" class="btn btn-success">Ajouter la tâche</button>
+    </div>
+
+</form>
